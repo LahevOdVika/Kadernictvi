@@ -5,29 +5,155 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "Lato", sans-serif;
+h6,
+p {
   color: white;
   margin: 0;
   padding: 0;
 }
 html,
 body {
-  box-sizing: border-box;
-  height: 100vh;
-}
-html {
-  background: linear-gradient(150deg, #DFC0C0, #FFECEC);
-}
-header {
-  position: sticky;
-  top: 0;
-  border-bottom: solid black 2px;
-  height: 100px;
-  background-color: #DFC0C0;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+    height: 100vh;
+    font-size: larger;
+    text-align: center;
+    line-height: 1.5;
 }
 a {
-  color: white;
-  text-decoration: none;
-   
+    color: white;
+    text-decoration: none;
+}
+header {
+    position: sticky;
+    top: 0;
+    border-bottom: solid black 2px;
+    height: 100px;
+    background-color: #DFC0C0;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+div,
+img {
+    border-radius: 30px;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+header * {
+    color: black;
+}
+header > * {
+    margin-inline: 5rem;
+}
+.wrapper {
+    background: linear-gradient(150deg, #DFC0C0, #FFECEC);
+    position: relative;
+}
+.name {
+    padding-right: 10px;
+    border-right: solid black 3px;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.social, .links > * {
+    margin-left: 1rem;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 4rem;
+}
+main h1 {
+    font-family: 'Monoton', sans-serif;
+}
+#welcome-image {
+    object-fit: cover;
+    width: 40%;
+    height: 40%;
+}
+.section-header {
+    background-color: white;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 0;
+    height: 100px;
+    color: black;
+    display: grid;
+    place-content: center;
+    width: 100%;
+}
+.work-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-block: 2rem;
+}
+.work-card img {
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    object-position: right;
+}
+.description {
+    text-align: center;
+}
+.aboutme {
+    background-color: rgb(77, 97, 78);
+}
+.info {
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+.info * {
+    padding-inline: 1rem;
+}
+.info p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+    width: 800px;
+}
+#portrait {
+    width: 25%;
+    height: auto;
+}
+.galery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.galery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 2rem;
+    background-color: rgb(223, 191, 191);
+    margin-block: 2rem;
+}
+.contacts {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-block: 2rem;
+}
+.kadernictvi, .kosmetika {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: rgb(223, 191, 191);
+    width: 30%;
+    height: 300px;
 }
