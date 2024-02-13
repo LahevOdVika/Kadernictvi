@@ -1,6 +1,7 @@
 :root {
     --dark-pink: rgb(223, 191, 191);
     --after-color: rgb(174, 115, 115);
+    --button-color: rgb(210, 179, 179);
 }
 html,
 body,
@@ -32,7 +33,7 @@ a {
     display: inline-block;
     height: 60px;
     width: 200px;
-    background-color: var(--dark-pink);
+    background-color: var(--button-color);
     border-radius: 30px;
     display: grid;
     place-content: center;
@@ -105,7 +106,7 @@ main {
 }
 main h1 {
     font-family: 'Monoton', sans-serif;
-    font-size: 90px;
+    font-size: 70px;
 }
 .welcome-text {
    display: flex;
@@ -133,7 +134,7 @@ main h1 {
 .work-card {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-block: 2rem;
 }
 .work-card img {
@@ -144,6 +145,7 @@ main h1 {
 }
 .description {
     text-align: center;
+    padding-inline: 2rem;
 }
 .aboutme {
     background-color: rgb(77, 97, 78);
@@ -174,11 +176,15 @@ main h1 {
 }
 .galery-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 2rem;
     background-color: var(--dark-pink);
-    margin-block: 2rem;
+    margin: 2rem;
+}
+.galery-image {
+    width: 90%;
+    height: 100%;
 }
 .contacts {
     display: flex;
