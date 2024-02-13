@@ -1,1 +1,16 @@
 @import url('style-index.css');
+.cenik {
+    background-color: var(--dark-pink);
+    padding: 2rem;
+    margin-top: 2rem;
+    box-sizing: border-box;
+}
+.cenik img {
+    box-sizing: border-box;
+}
+main {
+    flex-direction: column;
+}
+.wrapper {
+    background: linear-gradient(150deg, #DFC0C0, #FFECEC);
+}
