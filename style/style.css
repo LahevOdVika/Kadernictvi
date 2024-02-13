@@ -13,9 +13,21 @@ h6 {
 }
 html,
 body {
-    box-sizing: border-box;
-    height: 100vh;
+  box-sizing: border-box;
+  height: 100vh;
 }
 html {
-    background: linear-gradient(150deg, #DFC0C0, #FFECEC);
+  background: linear-gradient(150deg, #DFC0C0, #FFECEC);
+}
+header {
+  position: sticky;
+  top: 0;
+  border-bottom: solid black 2px;
+  height: 100px;
+  background-color: #DFC0C0;
+}
+a {
+  color: white;
+  text-decoration: none;
+   
 }
