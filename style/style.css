@@ -1,3 +1,7 @@
+:root {
+    --dark-pink: rgb(223, 191, 191);
+    --after-color: rgb(174, 115, 115);
+}
 html,
 body,
 h1,
@@ -23,6 +27,19 @@ body {
 a {
     color: white;
     text-decoration: none;
+}
+.button {
+    display: inline-block;
+    height: 60px;
+    width: 200px;
+    background-color: var(--dark-pink);
+    border-radius: 30px;
+    display: grid;
+    place-content: center;
+    transition: transform .2s ease-in-out;
+}
+.button:hover {
+    transform: scale(1.2);
 }
 header {
     position: sticky;
@@ -58,13 +75,27 @@ header > * {
     padding-right: 10px;
     border-right: solid black 3px;
 }
-.links {
+.links, .social {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    line-height: 1;
 }
-.social, .links > * {
-    margin-left: 1rem;
+.links > a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: var(--after-color);
+    width: 0;
+    transition: width .3s ease-in-out;
+}
+.links > a:hover::after {
+    width: 100%;
+}
+.links > * {
+    margin-inline: .5rem;
+}
+.social a {
+    padding-inline: .5rem;
 }
 main {
     display: flex;
@@ -74,6 +105,14 @@ main {
 }
 main h1 {
     font-family: 'Monoton', sans-serif;
+    font-size: 90px;
+}
+.welcome-text {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   line-height: 3;
 }
 #welcome-image {
     object-fit: cover;
@@ -138,7 +177,7 @@ main h1 {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 2rem;
-    background-color: rgb(223, 191, 191);
+    background-color: var(--dark-pink);
     margin-block: 2rem;
 }
 .contacts {
@@ -153,7 +192,7 @@ main h1 {
     justify-content: space-evenly;
     flex-direction: column;
     padding: 2rem;
-    background-color: rgb(223, 191, 191);
+    background-color: var(--dark-pink);
     width: 30%;
     height: 300px;
 }
