@@ -1,4 +1,7 @@
 @import url('style-index.css');
+.wrapper {
+    overflow: hidden;
+}
 .cenik {
     background-color: var(--dark-pink);
     padding: 2rem;
@@ -13,4 +16,20 @@ main {
 }
 .wrapper {
     background: linear-gradient(150deg, #DFC0C0, #FFECEC);
+}
+.blobs {
+    position: absolute;
+    top: 0;
+}
+.blobs > div {
+    width: 56%;
+}
+.left {
+    transform: translateX(-50%);
+}
+.right {
+    transform: translate(120%, -100%);
+}
+.top {
+    transform: translateY(-50%);
 }
