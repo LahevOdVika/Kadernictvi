@@ -3,6 +3,22 @@
     --after-color: rgb(174, 115, 115);
     --button-color: rgb(210, 179, 179);
 }
+@keyframes navbar-open {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+@keyframes navbar-close {
+    0% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(0);
+    }
+}
 html,
 body,
 h1,
@@ -18,9 +34,8 @@ p {
 }
 html,
 body {
-    font-family: "Lato", sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-    height: 100vh;
     font-size: larger;
     text-align: center;
     line-height: 1.5;
@@ -55,23 +70,23 @@ header {
     font-size: 20px;
     z-index: 99;
 }
-div,
-img {
-    border-radius: 30px;
-}
-img {
-    width: 100%;
-    height: 100%;
-}
 header * {
     color: black;
 }
 header > * {
     margin-inline: 5rem;
 }
+.mobile-menu {
+    display: none;
+}
+div,
+img {
+    border-radius: 30px;
+}
 .wrapper {
     background: linear-gradient(150deg, #DFC0C0, #FFECEC);
     position: relative;
+    border-radius: 0;
 }
 .name {
     padding-right: 10px;

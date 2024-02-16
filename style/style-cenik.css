@@ -1,6 +1,9 @@
 @import url('style-index.css');
-.wrapper {
-    overflow: hidden;
+main {
+    flex-direction: column;
+    padding-block: 2rem;
+    position: relative;
+    z-index: 98;
 }
 .cenik {
     background-color: var(--dark-pink);
@@ -8,28 +11,15 @@
     margin-top: 2rem;
     box-sizing: border-box;
 }
-.cenik img {
-    box-sizing: border-box;
-}
-main {
-    flex-direction: column;
-}
-.wrapper {
-    background: linear-gradient(150deg, #DFC0C0, #FFECEC);
-}
-.blobs {
+/* .blobs {
     position: absolute;
     top: 0;
-}
-.blobs > div {
-    width: 56%;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;;
+    height: 50%;
 }
 .left {
-    transform: translateX(-50%);
-}
-.right {
-    transform: translate(120%, -100%);
-}
-.top {
-    transform: translateY(-50%);
-}
+    width: 50%;
+} */

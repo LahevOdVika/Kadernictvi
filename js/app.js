@@ -10,3 +10,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         
     });
 });
+document.querySelector('.menu').addEventListener('click', function() {
+    let content = document.querySelector('.menu-content');
+    if (content.classList.contains('menu-content-active')) {
+
+        content.classList.remove('menu-content-active');
+        content.classList.add('menu-content-close');
+        
+    } else {
+        content.classList.add('menu-content-active');
+        content.classList.remove('menu-content-close');
+    }
+})
