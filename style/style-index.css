@@ -6,17 +6,11 @@
 @keyframes navbar-open {
     0% {
         transform: scaleY(0);
+        opacity: 50%;
     }
     100% {
         transform: scaleY(1);
-    }
-}
-@keyframes navbar-close {
-    0% {
-        transform: scaleY(1);
-    }
-    100% {
-        transform: scaleY(0);
+        opacity: 1;
     }
 }
 html,

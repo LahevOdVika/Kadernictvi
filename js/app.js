@@ -10,7 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         
     });
 });
-document.querySelector('.menu').addEventListener('click', function() {
+document.querySelector('.menu-button').addEventListener('click', function() {
     let content = document.querySelector('.menu-content');
     if (content.classList.contains('menu-content-active')) {
 
