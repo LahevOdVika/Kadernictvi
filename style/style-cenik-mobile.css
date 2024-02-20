@@ -1,10 +1,12 @@
 @import url('style-index-mobile.css');
 @media only screen and (max-width: 450px) {
-    .wrapper {
-        height: 100vh;
-    }
     .cenik {
         padding: 0;
         margin: 0 1rem 0 1rem;
+    }
+}
+@media only screen and (max-width: 1700px) {
+    main {
+        flex-direction: column;
     }
 }
