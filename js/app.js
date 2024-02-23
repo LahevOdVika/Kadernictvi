@@ -12,13 +12,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 document.querySelector('.menu-button').addEventListener('click', function() {
     let content = document.querySelector('.menu-content');
-    if (content.classList.contains('menu-content-active')) {
+    
+    if (content.hasAttribute('open')) {
+        content.setAttribute('closing', '');
+        content.removeAttribute('open');
 
-        content.classList.remove('menu-content-active');
-        content.classList.add('menu-content-close');
-        
+        content.addEventListener('animationend', () => {
+            content.removeAttribute('closing');
+        });
     } else {
-        content.classList.add('menu-content-active');
-        content.classList.remove('menu-content-close');
+        content.setAttribute('open', '');
     }
-})
+});

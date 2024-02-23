@@ -15,9 +15,8 @@ main {
 .cenik {
     background-color: var(--dark-pink);
     padding: .5rem;
-    margin-top: 2rem;
     box-sizing: border-box;
-
+    margin-top: 2rem;
 }
 /* .blobs {
     position: absolute;
