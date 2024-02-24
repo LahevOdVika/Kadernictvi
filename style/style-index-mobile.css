@@ -47,8 +47,13 @@
         left: 0;
         width: 100%;
         z-index: 99;
+        line-height: 2;
     }
-
+    .social {
+        margin-bottom: 1rem;
+        justify-content: center;
+        gap: 5rem;
+    }
     .menu-content[closing] {
         display: flex;
         animation: navbar-close .3s ease-in-out;
