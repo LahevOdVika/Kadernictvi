@@ -174,7 +174,8 @@ main h1 {
     object-position: right;
 }
 .description {
-    text-align: center;
+    display: grid;
+    place-content: center;
     padding-inline: 2rem;
 }
 .aboutme {
@@ -210,7 +211,6 @@ main h1 {
     grid-template-columns: repeat(3, minmax(250px, 1fr));
     grid-template-rows: auto;
     grid-auto-flow: dense;
-    grid-auto-rows: 300px;
 }
 .galery-grid img {
     transition: transform .1s ease-in-out;

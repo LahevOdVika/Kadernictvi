@@ -24,6 +24,10 @@
         box-shadow: none !important;
     }
 
+    .work-card img {
+        width: auto;
+        height: auto;
+    }
     .mobile-menu, .menu-button {
         display: block;
     }
