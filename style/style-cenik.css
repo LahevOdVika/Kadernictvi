@@ -7,6 +7,10 @@ main {
     display: flex;
     flex-direction: row;
     align-items: start;
+    background-image: url("../img/blobs-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .price-wrapper {
     display: flex;

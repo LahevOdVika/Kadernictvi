@@ -161,17 +161,28 @@ main h1 {
     place-content: center;
     width: 100%;
 }
+.work {
+    background-image: url("../img/circle-scatter-haikei.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .work-card {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    */
     padding-block: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .work-card img {
-    width: 30%;
-    height: 30%;
+    width: 60%;
     object-fit: cover;
     object-position: right;
+    transition: transform .1s ease-in-out;
+}
+.work-card img:hover {
+    transform: scale(1.1);
 }
 .description {
     display: grid;
@@ -212,11 +223,8 @@ main h1 {
     grid-template-rows: auto;
     grid-auto-flow: dense;
 }
-.galery-grid img {
-    transition: transform .1s ease-in-out;
-}
-.galery-grid img:hover {
-    transform: scale(1.1);
+.smaller {
+    height: 100%;
 }
 .tall {
     grid-row: span 2;

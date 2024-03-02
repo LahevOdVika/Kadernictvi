@@ -6,6 +6,8 @@
     }
     main {
         flex-direction: column;
+        background-position: unset;
+        padding: 0 2rem 0 2rem;
     }
     .cena {
         border-radius: 20px;

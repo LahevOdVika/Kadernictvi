@@ -23,7 +23,10 @@
         margin-block: 1rem;
         box-shadow: none !important;
     }
-
+    .work-card {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 200px;
+    }
     .work-card img {
         width: auto;
         height: auto;
