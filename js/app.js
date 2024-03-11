@@ -10,17 +10,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         
     });
 });
-document.querySelector('.menu-button').addEventListener('click', function() {
-    let content = document.querySelector('.menu-content');
-    
-    if (content.hasAttribute('open')) {
+let content = document.querySelector('.menu-content');
+
+document.querySelector('.menu-button').addEventListener('focusin', function() {
+    content.setAttribute('open', '');
+});
+
+document.querySelector('.menu-button').addEventListener('focusout', function() {
         content.setAttribute('closing', '');
         content.removeAttribute('open');
 
         content.addEventListener('animationend', () => {
             content.removeAttribute('closing');
         });
-    } else {
-        content.setAttribute('open', '');
-    }
 });
