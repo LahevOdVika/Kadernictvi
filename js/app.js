@@ -12,15 +12,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 let content = document.querySelector('.menu-content');
 
-document.querySelector('.menu-button').addEventListener('focusin', function() {
+let button = document.querySelector('button');
+
+button.addEventListener('click', function() {
     content.setAttribute('open', '');
 });
 
-document.querySelector('.menu-button').addEventListener('focusout', function() {
-        content.setAttribute('closing', '');
-        content.removeAttribute('open');
+button.addEventListener('focusout', function(e) {
+    content.setAttribute('closing', '');
+    content.removeAttribute('open');
 
-        content.addEventListener('animationend', () => {
-            content.removeAttribute('closing');
-        });
+    content.addEventListener('animationend', () => {
+        content.removeAttribute('closing');
+    });
 });

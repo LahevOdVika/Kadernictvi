@@ -147,6 +147,13 @@ main h1 {
     width: 40%;
     height: 40%;
 }
+button {
+    border: solid black 3px;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+}
 .shadow {
     box-shadow: 15px 8px 4px rgb(205, 176, 176);
 }
