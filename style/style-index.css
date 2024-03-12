@@ -140,7 +140,6 @@ main h1 {
    align-items: center;
    flex-direction: column;
    line-height: 3;
-
 }
 #welcome-image {
     object-fit: cover;
