@@ -47,6 +47,7 @@ body {
 a {
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 .button {
     display: inline-block;
