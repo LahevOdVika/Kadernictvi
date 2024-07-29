@@ -30,65 +30,79 @@
     />
     <link rel="canonical" href="https://studio-am.cz">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!--
+      Autor: Michal Budai
+    -->
 </head>
 <body>
 <div class="wrapper">
-  <header>
-    <h2 class="name">Kadernictvi Andrea</h2>
-    <div class="links">
-      <a href="index.html">Domů</a>
-      <a href="index.html#work">Služby</a>
-      <a href="index.html#aboutme">O Mně</a>
-      <a href="index.html#galery">Galerie</a>
-      <a href="index.html#reservation">Objednat se</a>
-      <a href="cenik.html">Ceník</a>
-      <div class="social">
-        <a href="https://www.instagram.com/andrejka_melkova/">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://www.facebook.com/kadernickestudioandrea1">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-      </div>
-    </div>
-    <div class="mobile-menu">
-      <button type="button">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <div class="menu-content menu-content-close">
-        <a href="index.html">Domů</a>
-        <a href="index.html#work">Služby</a>
-        <a href="index.html#aboutme">O Mně</a>
-        <a href="index.html#galery">Galerie</a>
-        <a href="index.html#reservation">Objednat se</a>
-        <a href="cenik.html">Ceník</a>
-        <div class="social">
-          <a href="https://www.instagram.com/andrejka_melkova/">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="https://www.facebook.com/kadernickestudioandrea1">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-      </div>
-    </div>
-  </header>
-  <main>
-    <div class="price-wrapper" id="kadercnictvi">
-      <a href="Ceníky/cenik-kadernictvi.pdf" class="button" download>Stáhnout ceník</a>
-      <div class="cenik">
-        <img src="img/ceniky/cenik-kadernictvi.png" alt="Ceník" class="cena">
-      </div>
-    </div>
+    <header>
+        <h2 class="name">Kadernictvi Andrea</h2>
+        <div class="links">
+            <a href="index.html">Domů</a>
+            <a href="index.html#work">Služby</a>
+            <a href="index.html#aboutme">O Mně</a>
+            <a href="index.html#galery">Galerie</a>
+            <a href="index.html#reservation">Objednat se</a>
+            <a href="cenik.html">Ceník</a>
+            <div class="social">
+                <a href="https://www.instagram.com/andrejka_melkova/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/kadernickestudioandrea1">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <button type="button">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="menu-content">
+                <a href="#">Domů</a>
+                <a href="index.html#work">Služby</a>
+                <a href="index.html#aboutme">O Mně</a>
+                <a href="index.html#galery">Galerie</a>
+                <a href="index.html#reservation">Objednat se</a>
+                <a href="#">Ceník</a>
+                <div class="social">
+                    <a onclick="
+                setTimeout(function() {
+                  window.location = 'https://www.instagram.com/andrejka_melkova';
+                }, 500);
+                window.location = 'instagram://user?username=andrejka_melkova';
+                ">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a onclick="
+                setTimeout(function() {
+                  window.location = 'https://www.facebook.com/kadernickestudioandrea1'
+                }, 500);
+                window.location = 'fb://page/kadernickestudioandrea1';
+                ">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="price-wrapper" id="kadercnictvi">
+            <a href="Ceníky/cenik-kadernictvi.pdf" class="button" download>Stáhnout ceník</a>
+            <div class="cenik">
+                <img src="img/ceniky/cenik-kadernictvi.png" alt="Ceník" class="cena">
+            </div>
+        </div>
 
-    <div class="price-wrapper" id="kosmetika">
-      <a href="Ceníky/cenik-kosmetika.pdf" class="button" download>Stáhnout ceník</a>
-      <div class="cenik">
-        <img src="img/ceniky/cenik-kosmetika.png" alt="Ceník" class="cena">
-      </div>
-    </div>
-  </div>
-</main>
-</div>    
+        <div class="price-wrapper" id="kosmetika">
+            <a href="Ceníky/cenik-kosmetika.pdf" class="button" download>Stáhnout ceník</a>
+            <div class="cenik">
+                <img src="img/ceniky/cenik-kosmetika.png" alt="Ceník" class="cena">
+            </div>
+        </div>
+    </main>
+</div>
 </body>
 <script src="js/app.js"></script>
 </html>
